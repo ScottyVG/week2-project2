@@ -70,8 +70,8 @@ ADVANCED TRACK: 16-20
 //    number is even and greater than 10, and 'Odd' if the number is odd.
 //    HINT: Google 'remainder operator'
 
-// not doing the second value correctly... need to fix
 // var numArray = [2, 17, 9, 24, 8];
+
 // for (var i = 0; i < numArray.length; i++) {
 //   if ((numArray[i] % 2 == 0) && (numArray[i] > 10)) {
 //     console.log(numArray[i] + " Even and greater than 10");
@@ -84,8 +84,15 @@ ADVANCED TRACK: 16-20
 // }
 
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
-var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
-// var numThrees
+// var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
+// var numThrees = [];
+//
+// for (var i = 0; i < numArray.length; i++)
+//   if (numArray[i] % 10 == 3) {
+//     numThrees.unshift(numArray[i]);
+//   }
+// console.log(numThrees.reverse());
+
 // 8. Write a loop that outputs the following to the console:
 // #
 // ##
@@ -95,11 +102,19 @@ var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 
 // ######
 // #######
 
+// var hashtag = "";
+//
+// for (var i = 0; i < 7; i++){
+//   var hashtag = hashtag.concat("#");
+//   console.log(hashtag);
+// }
+
 // 9. FIZZ BUZZ
 // Write a program that uses console.log to print each number up to 100, with a couple exceptions...
 // If the number is divisible by 3, print "Fizz" instead of the number.
 // If the number is divisible by 5, print "Buzz" instead of the number.
 // If the number is divisible by both 3 and 5, print "FizzBuzz" instead of the number.
+
 // for (var i = 0; i <=100; i++) {
 //   if ((i%3 === 0) && (i%5 === 0)) {
 //     console.log("FizzBuzz");
@@ -113,19 +128,48 @@ var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 
 //     console.log(i);
 //   }
 // }
+
 // RO SHAM BO!
 // We're going to create a paper, rock, scissors game that prompts you for your choice and allows the computer to
 // randomly choose. You will use an alert to define the winner.
 
 // 10. Use a variable called "human" to prompt the user to type their choice.
+
+var human = prompt("Choose rock, paper or scissors");
+
 // 11. Define a variable called "computer" and use Math.random to allow the computer to randomly select a number.
 //     For reference:
 //     Math.random gives you a random number between 0 and 1, which is different each time you call it.
+
+var computer = Math.random();
+console.log(computer);
+
 // 12. Let's start our conditional statement.
 //     If the random computer number falls between 0 and .33, the computer is "rock"
 //     If the random computer number falls between .34 and .66, the computer is "paper"
 //     If the random computer number falls between .67 and 1, the computer is "scissors"
+
+if ((computer >= 0) && (computer <= 0.33)) {
+  var computerChoice = 'rock';
+}
+else if ((computer > 0.33) && (computer <= 0.66)) {
+  var computerChoice = 'paper';
+}
+else if ((computer > 0.66) && (computer <= 1)) {
+  var computerChoice = 'scissors';
+}
+console.log(computerChoice);
+
 // 13. Using both "human" and the computer choice, begin another conditional statement to compare them.
+
+if (computerChoice == human) {
+  var result = "draw";
+}
+else if ((computerChoice == "rock") || (human == "rock")){
+  if ((computerChoice == "") || (human == "rock")){
+
+  }
+}
 // 14. After comparing, determine who has won; the computer or the human!
 // 15. Give yourself a high five for completing your first javascript game!
 // BONUS: What happens if your user enters something other than "rock", "paper", or "scissors?". Change your default case
