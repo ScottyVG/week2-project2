@@ -71,21 +71,21 @@ ADVANCED TRACK: 16-20
 //    HINT: Google 'remainder operator'
 
 // not doing the second value correctly... need to fix
-var numArray = [2, 17, 9, 24, 8];
-for (var i = 0; i < numArray.length; i++) {
-  if ((numArray[i] / 2) && (numArray[i] > 10)) {
-    console.log(numArray[i] + " Even and greater than 10");
-  } else if (numArray[i]/2) {
-      console.log(numArray[i] + " Even");
-    }
-    else {
-      console.log(numArray[i] + " Odd");
-    }
-}
+// var numArray = [2, 17, 9, 24, 8];
+// for (var i = 0; i < numArray.length; i++) {
+//   if ((numArray[i] % 2 == 0) && (numArray[i] > 10)) {
+//     console.log(numArray[i] + " Even and greater than 10");
+//   } else if (numArray[i] % 2 == 0) {
+//       console.log(numArray[i] + " Even");
+//     }
+//     else {
+//       console.log(numArray[i] + " Odd");
+//     }
+// }
 
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
 var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
-
+// var numThrees
 // 8. Write a loop that outputs the following to the console:
 // #
 // ##
