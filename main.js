@@ -188,21 +188,66 @@ ADVANCED TRACK: 16-20
 
 // ADVANCED TRACK
 // 16. Write a conditional statement to find the largest of the numbers in the array provided.
-var largestNum = [-5, -2, -6, 0, -1]
+// var largestNum = [-5, -2, -6, 0, -1];
+// var max = Math.max(...largestNum);
+// console.log(max);
+// utilized spread operator from MDN page
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 
+// also there is this... rofl
+// for (var i = 0; i < largestNum.length; i++) {
+//   if (largestNum[i] > max) {
+//     var max = largestNum[i];
+//   }
+// }
+// console.log(max);
 // HEADS OR TAILS?
 // 17. Use the following variable for your coin flip action:
-       var coin = Math.floor(Math.random() * 2);
+
 //     We're using Math.random again, along with Math.floor.
 //     Remember, Math.random gives you a random number between 0 and 1.
 //     Calling Math.floor on that number will truncate the decimal, and give you a
 //     random number within the bounds of your array. (In this case, our array will only contain two items.)
 // 18. Use a do/while loop to keep flipping the coin until you get tails.
 
+// var i = 0;
+// do {
+//    i += 1;
+//    var coin = Math.floor(Math.random() * 2);
+//     if ((coin == 1)) {
+//         var coin = 'heads';
+//     }  else if ((coin == 0)) {
+//         var coin = 'tails';
+//       }
+//    console.log(i);
+//    console.log(coin);
+// } while (coin == "heads");
+
 // CHESS BOARD
 // 19. Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.
 // At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
 
+// var hashtag = "";
+//
+// for (var i = 0; i < 8; i++){
+//   if (i % 2 == 0) {
+//       var hashtag = hashtag.concat(" ");
+//   } else if (i % 2 == 1) {
+//       var hashtag = hashtag.concat("#");
+//   }
+// }
+//
+// function reverse(s){
+//     return s.split("").reverse().join("");
+// }
+//
+// for (var i = 0; i < 8; i++){
+//   if (i % 2 == 0) {
+//       console.log(hashtag);
+//   } else if (i % 2 == 1) {
+//       console.log(reverse(hashtag));
+//   }
+// }
 //Passing this string to console.log should show something like this:
 
 //  # # # #
@@ -216,3 +261,27 @@ var largestNum = [-5, -2, -6, 0, -1]
 
 // 20. When you have a program that generates this pattern, define a variable size = 8 and change the program
 // sso that it works for any size, outputting a grid of the given width and height.
+
+// var hashtag = "";
+// var length = prompt("What is the length?");
+// var heigth = prompt("What is the height?");
+//
+// for (var i = 0; i < length; i++){
+//   if (i % 2 == 0) {
+//       var hashtag = hashtag.concat(" ");
+//   } else if (i % 2 == 1) {
+//       var hashtag = hashtag.concat("#");
+//   }
+// }
+//
+// function reverse(s){
+//     return s.split("").reverse().join("");
+// }
+//
+// for (var i = 0; i < heigth; i++){
+//   if (i % 2 == 0) {
+//       console.log(hashtag);
+//   } else if (i % 2 == 1) {
+//       console.log(reverse(hashtag));
+//   }
+// }
