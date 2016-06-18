@@ -135,43 +135,53 @@ ADVANCED TRACK: 16-20
 
 // 10. Use a variable called "human" to prompt the user to type their choice.
 
-var human = prompt("Choose rock, paper or scissors");
+// var human = prompt("Choose rock, paper or scissors");
 
 // 11. Define a variable called "computer" and use Math.random to allow the computer to randomly select a number.
 //     For reference:
 //     Math.random gives you a random number between 0 and 1, which is different each time you call it.
 
-var computer = Math.random();
-console.log(computer);
+// var computer = Math.random();
+// console.log(computer);
 
 // 12. Let's start our conditional statement.
 //     If the random computer number falls between 0 and .33, the computer is "rock"
 //     If the random computer number falls between .34 and .66, the computer is "paper"
 //     If the random computer number falls between .67 and 1, the computer is "scissors"
 
-if ((computer >= 0) && (computer <= 0.33)) {
-  var computerChoice = 'rock';
-}
-else if ((computer > 0.33) && (computer <= 0.66)) {
-  var computerChoice = 'paper';
-}
-else if ((computer > 0.66) && (computer <= 1)) {
-  var computerChoice = 'scissors';
-}
-console.log(computerChoice);
+// if ((computer >= 0) && (computer <= 0.33)) {
+//     var computerChoice = 'rock';
+// }  else if ((computer > 0.33) && (computer <= 0.66)) {
+//     var computerChoice = 'paper';
+// }  else if ((computer > 0.66) && (computer <= 1)) {
+//     var computerChoice = 'scissors';
+//   }
+// console.log(computerChoice);
 
 // 13. Using both "human" and the computer choice, begin another conditional statement to compare them.
 
-if (computerChoice == human) {
-  var result = "draw";
-}
-else if ((computerChoice == "rock") || (human == "rock")){
-  if ((computerChoice == "") || (human == "rock")){
+// if (computerChoice == human) {
+//     var result = "The outcome of the match was a draw. Refresh the page to play again!";
+// }  else if ((computerChoice == "rock") && (human == "scissor")){
+//     var result = "The computer wins.";
+// }  else if ((computerChoice == "paper") && (human == "rock")){
+//     var result = "The computer wins.";
+// }  else if ((computerChoice == "scissor") && (human == "paper")){
+//     var result = "The computer wins.";
+// }  else if ((human == "rock") && (computerChoice == "scissor")){
+//     var result = "You won!!!";
+// }  else if ((human == "paper") && (computerChoice == "rock")){
+//     var result = "You won!!!";
+// }  else if ((human == "scissor") && (computerChoice == "paper")){
+//     var result = "You won!!!";
+// }  else {
+//     var result = "I'm sorry. " + human + " is not a valid response. Please refresh the page to play again!";
+// }
 
-  }
-}
 // 14. After comparing, determine who has won; the computer or the human!
+// alert(result);
 // 15. Give yourself a high five for completing your first javascript game!
+
 // BONUS: What happens if your user enters something other than "rock", "paper", or "scissors?". Change your default case
 //     to print a snarky message to the console if the input doesn't match any of the options.
 
